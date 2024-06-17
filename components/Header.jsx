@@ -17,7 +17,7 @@ const Header = ()=>{
 
   return(
     <>
-    <nav className="flex justify-between bg-white px-6 py-3">
+    <nav className="flex justify-between bg-white px-6 py-3 border-b-4 border-gray-200 ">
     <nav className=" flex text-black gap-10 items-center ">
       <span className="text-2xl font-bold">FairFare</span>
       <div className="flex gap-4">
@@ -31,7 +31,7 @@ const Header = ()=>{
         }
       </div>
     </nav>
-    <UserButton className="h-16"/>
+    <UserButton className=""/>
 
     </nav>
     </>
