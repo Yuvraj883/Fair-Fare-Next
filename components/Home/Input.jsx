@@ -7,7 +7,7 @@ const Input  = (props)=>{
 
   return (
     <>
-    <div className="flex px-4 bg-white my-2 ">
+    <div className="flex px-4 py-1 bg-white my-2 rounded-lg gap-2">
 
     <img src={pickup?'./pick-up.png' : './drop-off.png'} alt="pick-up icon"
          className="h-10"/>
@@ -16,6 +16,21 @@ const Input  = (props)=>{
               selectProps={{
                 value,
                 onChange: setValue,
+                placeholder: pickup?'Pick-up location':'Drop-off location',
+                isClearable:true,
+                className:"w-full outline-none  border-none",
+                components:{
+                  DropdownIndicator:false
+                },
+
+
+                styles: {
+                  control: (provided) => ({
+                    ...provided,
+                    color: 'black',
+                    border:'none'
+                  }),
+                }
               }}
 
       />
