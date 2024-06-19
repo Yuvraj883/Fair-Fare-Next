@@ -14,8 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider frontendApi={process.env.NEXT_PUBLIC_}>
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
       <Header/>
+      {children}
       </body>
 
 
